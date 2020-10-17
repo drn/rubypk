@@ -5,4 +5,8 @@ class ApplicationController < ActionController::Base
     IngestPurchases.call
     render json: { success: true }
   end
+
+  def count
+    render json: { count: Purchase.count }
+  end
 end
