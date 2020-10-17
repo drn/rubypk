@@ -6,11 +6,14 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'faraday', '~> 1.0'
+gem 'faraday_middleware', '~> 1.0'
 gem 'mysql2', '~> 0.5.3'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'pry-rails'
 end
 
