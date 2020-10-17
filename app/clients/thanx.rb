@@ -2,7 +2,7 @@
 
 class Thanx
   def purchases
-    client.get('purchases').body['purchases']
+    client.get('purchases', page: 8, per_page: 20).body['purchases']
   end
 
 private
@@ -20,7 +20,10 @@ private
 
   def headers
     {
-      'Authorization' => "Bearer #{ENV['API_KEY']}"
+      'Authorization'  => "Bearer #{ENV['API_ACCESS_TOKEN']}",
+      'Accept-Version' => 'v4.0',
+      'X-ClientId'     => ENV['API_CLIENT_ID'],
+      'Date'           => Time.current.to_s
     }
   end
 end
