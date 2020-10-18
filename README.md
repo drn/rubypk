@@ -1,24 +1,16 @@
-# README
+# RubyConf Pakistan
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Organizing Business Logic & Async Processing (October 2020)
 
-Things you may want to cover:
+![](screenshot.png)
 
-* Ruby version
+* * *
 
-* System dependencies
+This project serves to highlight how easy it is to integrate the following
+rubygems:
+* [Interactor](https://github.com/collectiveidea/interactor) for organizing
+business logic
+* [Sidekiq](https://github.com/mperham/sidekiq) for async processing
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This goes along with the
+[corresponding presentation](https://docs.google.com/presentation/d/1X9zGWnm4o9laIN7ZtOQBXZb3z-e24vfFYSrRjfG5uLw).
